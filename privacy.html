@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Flara</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --text: #1a1917;
+      --muted: #6b6760;
+      --accent: #c0392b;
+      --border: #e8e5e0;
+      --max: 680px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 24px 80px;
+    }
+
+    header {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .app-name {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .summary-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .summary-box p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .summary-box p:last-child { margin-bottom: 0; }
+
+    .summary-box strong {
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 44px;
+    }
+
+    h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+
+    ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover { border-bottom-color: var(--accent); }
+
+    .contact-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+
+    .contact-block p { font-size: 15px; }
+
+    footer {
+      max-width: var(--max);
+      margin: 56px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-name">Flara</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: March 24, 2026 &nbsp;·&nbsp; Last updated: March 24, 2026</p>
+  </header>
+
+  <main>
+
+    <div class="summary-box">
+      <p><strong>The short version:</strong> Flara does not collect, store, or transmit any of your personal data. There is no account. There is no server. Everything stays on your device.</p>
+      <p>Your symptom data is written directly to the Apple Health app on your iPhone, where it is protected by Apple's own privacy and security systems. Flara never reads it back.</p>
+    </div>
+
+    <section>
+      <h2>1. Who We Are</h2>
+      <p>Flara is an iOS application developed and published by Erik Jimenez ("we," "our," or "us"). This Privacy Policy explains how Flara handles your information.</p>
+      <p>If you have questions about this policy, you can reach us at <a href="mailto:hello@xolo.uno">hello@xolo.uno</a>.</p>
+    </section>
+
+    <section>
+      <h2>2. Information We Do Not Collect</h2>
+      <p>Flara is designed to collect as little information as possible. We do not collect, transmit, or store:</p>
+      <ul>
+        <li>Your name, email address, or any contact information</li>
+        <li>Your health data, symptom records, or Apple Health data</li>
+        <li>Your location</li>
+        <li>Device identifiers or advertising identifiers</li>
+        <li>Usage analytics or behavioral data</li>
+        <li>Crash logs or diagnostic data sent to our servers</li>
+      </ul>
+      <p>Flara has no user accounts and no backend servers. There is nowhere for your data to go except your own device.</p>
+    </section>
+
+    <section>
+      <h2>3. How Flara Uses Apple HealthKit</h2>
+      <p>Flara requests permission to write data to Apple Health. This permission is used for one purpose only: to save completed symptom records — including the symptom type, start time, and end time — to the Health app on your iPhone.</p>
+      <p>Flara does <strong>not</strong> request permission to read data from Apple Health. We cannot access any health data you have stored there, including records created by Flara.</p>
+      <p>Health data written by Flara is stored and protected entirely by Apple's HealthKit framework and your iPhone's security systems. Apple's own <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a> governs how that data is handled.</p>
+      <p>In accordance with Apple's HealthKit guidelines, data written to HealthKit by Flara will never be used for advertising, sold to third parties, or shared with anyone.</p>
+    </section>
+
+    <section>
+      <h2>4. Local Storage</h2>
+      <p>While a symptom is actively being tracked, Flara stores a small record on your device (using iOS's UserDefaults system) containing the symptom type and the time tracking started. This record is deleted from the app as soon as you end the symptom. No backup of this data is sent anywhere.</p>
+      <p>Flara also stores a single date on your device to manage your free trial period. This date never leaves your device.</p>
+    </section>
+
+    <section>
+      <h2>5. Subscriptions and Payments</h2>
+      <p>Flara offers optional paid subscriptions managed entirely through Apple's App Store and Apple's StoreKit framework. All payment processing is handled by Apple. We do not see, receive, or store your payment information, credit card details, or billing address.</p>
+      <p>For information about how Apple handles payment and subscription data, see Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>6. Live Activities and Notifications</h2>
+      <p>Flara displays Live Activities on your Lock Screen and in the Dynamic Island while a symptom is being tracked. This information is processed entirely on your device and is not transmitted to any server.</p>
+      <p>If you grant notification permission, Flara may send a daily summary notification reminding you that a symptom is still being tracked. These notifications are generated locally on your device and do not involve any external servers or services.</p>
+    </section>
+
+    <section>
+      <h2>7. Third-Party Services</h2>
+      <p>Flara does not use any third-party data collection, analytics, or subscription management services. All subscription management is handled natively through Apple's StoreKit framework.</p>
+      <p>Flara does not use advertising networks, analytics SDKs, social media SDKs, or any other third-party data collection services.</p>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>Flara is not directed at children under the age of 13. Because Flara does not collect any personal information from any user, there is no data to collect from children. No account creation, no sign-up, and no personal data entry is required or possible.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>If we make material changes to this Privacy Policy, we will update the "Last updated" date at the top of this page and, where appropriate, notify users through the App Store update notes. We encourage you to review this policy periodically.</p>
+      <p>Continued use of Flara after any changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+      <div class="contact-block">
+        <p><strong>Erik Jimenez</strong><br>
+        <a href="mailto:hello@xolo.uno">hello@xolo.uno</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Erik Jimenez. Flara is an independent app not affiliated with Apple Inc.</p>
+  </footer>
+
+</body>
+</html>
