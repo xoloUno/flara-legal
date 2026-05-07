@@ -162,14 +162,14 @@
   <header>
     <div class="app-name">Flara</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: March 24, 2026 &nbsp;·&nbsp; Last updated: March 24, 2026</p>
+    <p class="meta">Effective date: March 24, 2026 &nbsp;·&nbsp; Last updated: May 7, 2026</p>
   </header>
 
   <main>
 
     <div class="summary-box">
-      <p><strong>The short version:</strong> Flara does not collect, store, or transmit any of your personal data. There is no account. There is no server. Everything stays on your device.</p>
-      <p>Your symptom data is written directly to the Apple Health app on your iPhone, where it is protected by Apple's own privacy and security systems. Flara never reads it back.</p>
+      <p><strong>The short version:</strong> Flara has no user accounts and no Flara servers. We do not collect, store, or transmit any of your personal data to systems we operate.</p>
+      <p>Your symptom records are written directly to the Apple Health app, where Apple's end-to-end encrypted iCloud Health sync may sync them across your devices — Flara never reads them back. Your card list and in-progress timers sync across your Apple devices through your private iCloud account, encrypted with your own keys before they leave your device. We never see this data.</p>
     </div>
 
     <section>
@@ -180,16 +180,16 @@
 
     <section>
       <h2>2. Information We Do Not Collect</h2>
-      <p>Flara is designed to collect as little information as possible. We do not collect, transmit, or store:</p>
+      <p>Flara has no user accounts and no Flara-operated servers. We do not collect, receive, or store any of the following on systems we control:</p>
       <ul>
         <li>Your name, email address, or any contact information</li>
         <li>Your health data, symptom records, or Apple Health data</li>
         <li>Your location</li>
         <li>Device identifiers or advertising identifiers</li>
         <li>Usage analytics or behavioral data</li>
-        <li>Crash logs or diagnostic data sent to our servers</li>
+        <li>Crash logs or diagnostic data</li>
       </ul>
-      <p>Flara has no user accounts and no backend servers. There is nowhere for your data to go except your own device.</p>
+      <p>The only places your Flara-related data exists are on your device, in Apple Health (which may sync across your devices through Apple's end-to-end encrypted iCloud Health sync), and in your private iCloud account (which Flara uses to sync your card list and in-progress timers across your Apple devices, encrypted with your own keys). See sections 3 and 4 for details.</p>
     </section>
 
     <section>
@@ -201,42 +201,55 @@
     </section>
 
     <section>
-      <h2>4. Local Storage</h2>
-      <p>While a symptom is actively being tracked, Flara stores a small record on your device (using iOS's UserDefaults system) containing the symptom type and the time tracking started. This record is deleted from the app as soon as you end the symptom. No backup of this data is sent anywhere.</p>
+      <h2>4. iCloud Sync of App State</h2>
+      <p>To make Flara work consistently across your iPhone, iPad, and Apple Watch, Flara syncs the following app state through your private iCloud account using Apple's CloudKit service:</p>
+      <ul>
+        <li>Your card list (which symptoms you've added to the app)</li>
+        <li>Your pin order and sort order for those cards</li>
+        <li>Any symptom timers currently in progress (symptom type, start time, and severity if set)</li>
+      </ul>
+      <p>This data is stored in your <strong>private CloudKit container</strong>. Flara has no access to it, Apple cannot read it, and we have no servers that ever receive it. Each field is encrypted on your device with keys held in your iCloud Keychain before it ever leaves the device.</p>
+      <p>Once you stop tracking a symptom and save the record to Apple Health, the in-progress timer is removed from CloudKit. The completed health record then lives only in Apple Health.</p>
+      <p>If you sign out of iCloud or disable iCloud Drive for Flara in iOS Settings, this sync stops and Flara operates in local-only mode on that device.</p>
+    </section>
+
+    <section>
+      <h2>5. Local Storage</h2>
+      <p>Flara also keeps a copy of the data described in section 4 in your device's local storage so the app works offline and so widgets can display your active symptoms quickly. This local copy is included in your iPhone's standard iCloud or iTunes backup.</p>
       <p>Flara also stores a single date on your device to manage your free trial period. This date never leaves your device.</p>
     </section>
 
     <section>
-      <h2>5. Subscriptions and Payments</h2>
+      <h2>6. Subscriptions and Payments</h2>
       <p>Flara offers optional paid subscriptions managed entirely through Apple's App Store and Apple's StoreKit framework. All payment processing is handled by Apple. We do not see, receive, or store your payment information, credit card details, or billing address.</p>
       <p>For information about how Apple handles payment and subscription data, see Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
     </section>
 
     <section>
-      <h2>6. Live Activities and Notifications</h2>
+      <h2>7. Live Activities and Notifications</h2>
       <p>Flara displays Live Activities on your Lock Screen and in the Dynamic Island while a symptom is being tracked. This information is processed entirely on your device and is not transmitted to any server.</p>
       <p>If you grant notification permission, Flara may send a daily summary notification reminding you that a symptom is still being tracked. These notifications are generated locally on your device and do not involve any external servers or services.</p>
     </section>
 
     <section>
-      <h2>7. Third-Party Services</h2>
+      <h2>8. Third-Party Services</h2>
       <p>Flara does not use any third-party data collection, analytics, or subscription management services. All subscription management is handled natively through Apple's StoreKit framework.</p>
       <p>Flara does not use advertising networks, analytics SDKs, social media SDKs, or any other third-party data collection services.</p>
     </section>
 
     <section>
-      <h2>8. Children's Privacy</h2>
+      <h2>9. Children's Privacy</h2>
       <p>Flara is not directed at children under the age of 13. Because Flara does not collect any personal information from any user, there is no data to collect from children. No account creation, no sign-up, and no personal data entry is required or possible.</p>
     </section>
 
     <section>
-      <h2>9. Changes to This Policy</h2>
+      <h2>10. Changes to This Policy</h2>
       <p>If we make material changes to this Privacy Policy, we will update the "Last updated" date at the top of this page and, where appropriate, notify users through the App Store update notes. We encourage you to review this policy periodically.</p>
       <p>Continued use of Flara after any changes constitutes acceptance of the updated policy.</p>
     </section>
 
     <section>
-      <h2>10. Contact</h2>
+      <h2>11. Contact</h2>
       <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
       <div class="contact-block">
         <p><strong>Erik Jimenez</strong><br>
